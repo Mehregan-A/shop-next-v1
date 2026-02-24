@@ -1,9 +1,10 @@
 import React from 'react';
 
-const Page = () => {
+const Page = async ({params}) => {
+    const {id} = await params;
     return (
         <div>
-            product
+            {id}
         </div>
     );
 };
